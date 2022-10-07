@@ -1,0 +1,39 @@
+h1 {
+color: coral;
+text-decoration: underline;
+}
+
+h2 {
+
+font-family: fantasy;
+font-style: oblique;
+color: blue;
+
+}
+
+header {
+
+    background-color: darkolivegreen;
+   width: fit-content;
+}
+
+.Racloute {
+
+    width: 500px;
+    border: 10px maroon solid;
+    border-radius: 40px;
+
+}
+
+ol {
+font-size: 15pt;
+list-style: upper-roman;
+
+}
+
+p {
+
+font-family: monospace;
+font-size: 15pt;
+
+}
