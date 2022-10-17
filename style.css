@@ -1,20 +1,62 @@
 h1 {
-color: coral;
-text-decoration: underline;
+    color: coral;
+    text-decoration: underline;
+    margin : 0px;
+    margin-bottom: 20px;
+    padding : 10px;
+
+    animation: disco 2s infinite alternate-reverse ;
+
+
+}
+
+
+table {
+
+    border-collapse: collapse;
+}
+
+td,th {
+
+  border: 1px solid blue ;  
+}
+
+td {
+
+text-align: center;
+
+}
+
+@keyframes disco {
+
+    0% {color :coral;}
+
+    25% {color : white;}
+
+    50% {color : blue;}
+
+    75% {color : green;}
+
+    100% {color : red;}
+
+
+
 }
 
 h2 {
 
-font-family: fantasy;
-font-style: oblique;
-color: blue;
+    font-family: fantasy;
+    font-style: oblique;
+    color: blue;
 
 }
 
 header {
 
     background-color: darkolivegreen;
-   width: fit-content;
+    margin : 0 px;
+    text-align: center;
+
 }
 
 .Racloute {
@@ -22,18 +64,27 @@ header {
     width: 500px;
     border: 10px maroon solid;
     border-radius: 40px;
+    margin: 20px;
 
 }
 
 ol {
-font-size: 15pt;
-list-style: upper-roman;
+    font-size: 15pt;
+    list-style: upper-roman;
 
 }
 
 p {
 
-font-family: monospace;
-font-size: 15pt;
+    font-family: monospace;
+    font-size: 15pt;
+
+}
+
+body {
+    margin : 0px;
+    padding : 0px;
+    border : 0px;
+
 
 }

@@ -1,0 +1,86 @@
+/* Transition sur "a", rend plus "élégant" le changement jusqu'au :hover */ 
+a {
+    transition: all 0.6s ease-in-out;
+    text-shadow: 5px 6px 5px rgba(9, 9, 9, 0.7);
+}
+a:hover {
+    /* 
+    text-shadow créé une ombre pour du texte
+    les deux premières valeurs modifient l'axe x et y
+    la troisième modifie le flou de l'ombre
+    puis on modifie la couleur de l'ombre
+     */
+    text-shadow: 5px 6px 0px rgb(9, 9, 9);
+}
+
+
+/* 
+    Avec "animation" on configure notre animation, on lui donne un nom, une durée et un "style d'éxécution" 
+    Infinite et alternate sont la pour dire que l'animation ne s'arrête jamais et une fois arrivée à 100%, elle fait marche arrière de 100% à 0%
+*/ 
+h1 {
+    animation: titreH1 2s ease-in-out infinite alternate;
+}
+/* 
+    @keyframes permet de créer l'animation
+    On lui donne le nom de l'animation visée, "titreH1" dans notre cas
+    et dans les accolades, on défini les différentes étapes de l'animation
+*/ 
+@keyframes titreH1 {
+    /* Etat initial à 0% */
+    0% {
+        color: black;
+    }
+    /* état à 33% de la durée de l'animation */
+    33% {
+        color: blueviolet;
+    }
+    /* état à 66% de la durée de l'animation */
+    66% {
+        color: brown;
+    }
+    /* état à 100% de la durée de l'animation */
+    100% {
+        color: darkgreen;
+    }
+}
+
+/* 
+Tout les éléments HTML ont un "margin", une "border", un padding et un "content" (voir image sur Discord, ou dans l'inspecteur).
+Pour certains éléments, comme les <p>, un margin par défaaut éxiste déjà.
+On peut les modifier en CSS grace aux propriétés CSS : margin, border et padding.
+
+Dans notre cas, on passe 4 valeurs dans "margin", 
+la première modifie toujours la partie TOP 
+La deuxième la partie RIGHT
+La troisième la partie BOTTOM
+Et la quatrième la partie LEFT
+( Sens des aiguilles d'une montre)
+
+Dans le padding on passe seulement deux valeurs,
+La première modifie la partie TOP et BOTTOM
+Et la deuxième la partie RIGHT et LEFT
+
+On peut choisir de modifier que la partie TOP en rajoutant -top par exemple (margin-top: 15px;)
+*/
+p {
+    margin: 5px 6px 10px 15px;
+    padding: 120px 100px;
+    border-bottom: 1px black solid;
+}
+
+/* Entre les crochets, je précise le type de l'input que je veux sélectionner */
+input[type="submit"] {
+    background-color: aqua;
+}
+
+/* la pseudo-class ":active", précise que le CSS s'applique seulement quand on clique sur l'élément */
+input[type="submit"]:active {
+    height: 50px;
+    width: 100px;
+}
+
+/* ":focus" applique le css seulement quand on clique dans l'input */
+input[type="text"]:focus {
+    background-color: burlywood;
+}
